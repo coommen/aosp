@@ -1,0 +1,3 @@
+add_lunch_combo full_samstechdevice-userdebug
+add_lunch_combo full_samstechdevice-user
+add_lunch_combo full_samstechdevice-eng
