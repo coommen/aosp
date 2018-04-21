@@ -13,8 +13,12 @@
 #     +--> base.mk
 #     +--> embedded.mk
 
+# Didn't load in Emulator
+#$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 
-$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
+#using this instead
+$(call inherit-product, device/generic/armv7-a-neon/mini_common.mk)
+
 
 # REQUIRED - creates the emulator tools for the build
 # must be included in the product make file in order to get it created for this product
@@ -35,8 +39,8 @@ PRODUCT_LOCALES := en_US
 DEVICE_PACKAGE_OVERLAYS := device/samsclub/seuic_cruise/goi_overlays
 PRODUCT_CHARACTERISTICS := nosdcard
 
-config_toastDefaultGravity=top|center_horizontal
-
+# when the devicename and product names don't match you need to 
+# explicitly inlcude the device make file
 include device/samsclub/seuic_cruise/seuic_cruise.mk 
 OUT_DIR := out_samsdroid_cruise
 
