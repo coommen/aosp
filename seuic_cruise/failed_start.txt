@@ -1,0 +1,167 @@
+samstechinfra@cmo-androidbuild:/aosp/nougat$ emulator -verbose
+emulator:Found ANDROID_PRODUCT_OUT: /media/samstechinfra/AOSP/nougat/out_samsdroid_cruise/target/product/seuic_cruise
+emulator:Found build target architecture: x86_64
+emulator:Looking for emulator-x86 to emulate 'x86_64' CPU
+emulator:Probing program: ./emulator64-x86
+emulator:Probing program: ./emulator-x86
+emulator:Probing path for: emulator64-x86
+emulator:return result: /media/samstechinfra/AOSP/nougat/prebuilts/android-emulator/linux-x86_64/emulator64-x86
+emulator:Found target-specific emulator binary: /media/samstechinfra/AOSP/nougat/prebuilts/android-emulator/linux-x86_64/emulator64-x86
+emulator:GPU emulation is disabled
+emulator: Running :/media/samstechinfra/AOSP/nougat/prebuilts/android-emulator/linux-x86_64/emulator64-x86
+emulator: qemu backend: argv[00] = "/media/samstechinfra/AOSP/nougat/prebuilts/android-emulator/linux-x86_64/emulator64-x86"
+emulator: qemu backend: argv[01] = "-verbose"
+emulator: Concatenated backend parameters:
+ /media/samstechinfra/AOSP/nougat/prebuilts/android-emulator/linux-x86_64/emulator64-x86 -verbose
+emulator: found Android build root: /media/samstechinfra/AOSP/nougat
+emulator: found Android build out:  /media/samstechinfra/AOSP/nougat/out_samsdroid_cruise/target/product/seuic_cruise
+emulator: Read property file at /media/samstechinfra/AOSP/nougat/out_samsdroid_cruise/target/product/seuic_cruise/system/build.prop
+emulator: Cannot find boot properties file: /media/samstechinfra/AOSP/nougat/out_samsdroid_cruise/target/product/seuic_cruise/boot.prop
+
+emulator: Found target API sdkVersion: 25
+
+emulator: virtual device has no config file - no problem
+emulator: using core hw config path: /media/samstechinfra/AOSP/nougat/out_samsdroid_cruise/target/product/seuic_cruise/hardware-qemu.ini
+emulator: found skin-specific hardware.ini: /media/samstechinfra/AOSP/nougat/development/tools/emulator/skins/HVGA/hardware.ini
+emulator: autoconfig: -skin HVGA
+emulator: autoconfig: -skindir /media/samstechinfra/AOSP/nougat/development/tools/emulator/skins
+emulator: found skin-specific hardware.ini: /media/samstechinfra/AOSP/nougat/development/tools/emulator/skins/HVGA/hardware.ini
+emulator: keyset loaded from: /home/samstechinfra/.android/default.keyset
+emulator: trying to load skin file '/media/samstechinfra/AOSP/nougat/development/tools/emulator/skins/HVGA/layout'
+emulator: skin network speed: 'full'
+emulator: skin network delay: 'none'
+emulator: autoconfig: -kernel /media/samstechinfra/AOSP/nougat/prebuilts/qemu-kernel/x86_64/kernel-qemu
+emulator: Target arch = 'x86_64'
+emulator: Auto-detect: Kernel image requires new device naming scheme.
+emulator: Auto-detect: Kernel does not support YAFFS2 partitions.
+emulator: autoconfig: -ramdisk /media/samstechinfra/AOSP/nougat/out_samsdroid_cruise/target/product/seuic_cruise/ramdisk.img
+emulator: autoconfig: -sysdir /media/samstechinfra/AOSP/nougat/out_samsdroid_cruise/target/product/seuic_cruise
+emulator: Using initial system image: /media/samstechinfra/AOSP/nougat/out_samsdroid_cruise/target/product/seuic_cruise/system.img
+emulator: WARNING: system partition size adjusted to match image file (2048 MB > 200 MB)
+
+emulator: autoconfig: -initdata /media/samstechinfra/AOSP/nougat/out_samsdroid_cruise/target/product/seuic_cruise/userdata.img
+emulator: WARNING: data partition size adjusted to match image file (550 MB > 200 MB)
+
+emulator: autoconfig: -cache /media/samstechinfra/AOSP/nougat/out_samsdroid_cruise/target/product/seuic_cruise/cache.img
+emulator: WARNING: Increasing RAM size to 1GB
+emulator: Physical RAM size: 1024MB
+
+emulator: GPU emulation is disabled
+emulator: CPU Acceleration: working
+emulator: CPU Acceleration status: KVM (version 12) is installed and usable.
+Content of hardware configuration file:
+  hw.cpu.arch = x86
+  hw.ramSize = 1024
+  hw.screen = touch
+  hw.mainKeys = yes
+  hw.trackBall = yes
+  hw.keyboard = no
+  hw.keyboard.lid = no
+  hw.keyboard.charmap = qwerty2
+  hw.dPad = yes
+  hw.gsmModem = yes
+  hw.gps = yes
+  hw.battery = yes
+  hw.accelerometer = yes
+  hw.audioInput = yes
+  hw.audioOutput = yes
+  hw.sdCard = yes
+  disk.cachePartition = yes
+  disk.cachePartition.path = /media/samstechinfra/AOSP/nougat/out_samsdroid_cruise/target/product/seuic_cruise/cache.img
+  disk.cachePartition.size = 66m
+  hw.lcd.width = 320
+  hw.lcd.height = 480
+  hw.lcd.depth = 16
+  hw.lcd.density = 160
+  hw.lcd.backlight = yes
+  hw.gpu.enabled = no
+  hw.gpu.mode = auto
+  hw.initialOrientation = portrait
+  hw.camera.back = emulated
+  hw.camera.front = none
+  vm.heapSize = 48
+  hw.sensors.proximity = yes
+  hw.sensors.magnetic_field = yes
+  hw.sensors.orientation = yes
+  hw.sensors.temperature = yes
+  hw.useext4 = yes
+  kernel.path = /media/samstechinfra/AOSP/nougat/prebuilts/qemu-kernel/x86_64/kernel-qemu
+  kernel.parameters =  androidboot.hardware=goldfish clocksource=pit android.checkjni=1
+  kernel.newDeviceNaming = yes
+  kernel.supportsYaffs2 = no
+  disk.ramdisk.path = /media/samstechinfra/AOSP/nougat/out_samsdroid_cruise/target/product/seuic_cruise/ramdisk.img
+  disk.systemPartition.initPath = /media/samstechinfra/AOSP/nougat/out_samsdroid_cruise/target/product/seuic_cruise/system.img
+  disk.systemPartition.size = 2g
+  disk.dataPartition.path = /media/samstechinfra/AOSP/nougat/out_samsdroid_cruise/target/product/seuic_cruise/userdata-qemu.img
+  disk.dataPartition.initPath = /media/samstechinfra/AOSP/nougat/out_samsdroid_cruise/target/product/seuic_cruise/userdata.img
+  disk.dataPartition.size = 550m
+  avd.name = <build>
+.
+QEMU options list:
+emulator: argv[00] = "/media/samstechinfra/AOSP/nougat/prebuilts/android-emulator/linux-x86_64/emulator64-x86"
+emulator: argv[01] = "-enable-kvm"
+emulator: argv[02] = "-android-hw"
+emulator: argv[03] = "/media/samstechinfra/AOSP/nougat/out_samsdroid_cruise/target/product/seuic_cruise/hardware-qemu.ini"
+Concatenated QEMU options:
+ /media/samstechinfra/AOSP/nougat/prebuilts/android-emulator/linux-x86_64/emulator64-x86 -enable-kvm -android-hw /media/samstechinfra/AOSP/nougat/out_samsdroid_cruise/target/product/seuic_cruise/hardware-qemu.ini
+emulator: Starting QEMU main loop
+emulator:     trying to find: /media/samstechinfra/AOSP/nougat/prebuilts/android-emulator/linux-x86_64/lib/ca-bundle.pem
+
+emulator: registered 'boot-properties' qemud service
+emulator: Using kernel serial device prefix: ttyGF
+emulator: No fstab.goldfish file in ramdisk image
+emulator: Probing system image file for partition type: /media/samstechinfra/AOSP/nougat/out_samsdroid_cruise/target/product/seuic_cruise/system.img
+emulator: system partition format: ext4
+emulator: Mapping 'system' partition image to /tmp/android-samstechinfra/emulator-ARXgPK
+emulator: nand_add_dev: system,size=0x80000000,file=/tmp/android-samstechinfra/emulator-ARXgPK,initfile=/media/samstechinfra/AOSP/nougat/out_samsdroid_cruise/target/product/seuic_cruise/system.img,pagesize=512,extrasize=0
+emulator: Probing userdata image file for partition type: /media/samstechinfra/AOSP/nougat/out_samsdroid_cruise/target/product/seuic_cruise/userdata.img
+emulator: userdata partition format: ext4
+emulator: nand_add_dev: userdata,size=0x22600000,file=/media/samstechinfra/AOSP/nougat/out_samsdroid_cruise/target/product/seuic_cruise/userdata-qemu.img,initfile=/media/samstechinfra/AOSP/nougat/out_samsdroid_cruise/target/product/seuic_cruise/userdata.img,pagesize=512,extrasize=0
+emulator: cache partition format: ext4
+emulator: Creating empty cache partition image at: /media/samstechinfra/AOSP/nougat/out_samsdroid_cruise/target/product/seuic_cruise/cache.img
+Creating filesystem with parameters:
+    Size: 69206016
+    Block size: 4096
+    Blocks per group: 32768
+    Inodes per group: 4224
+    Inode size: 256
+    Journal blocks: 1024
+    Label: 
+    Blocks: 16896
+    Block groups: 1
+    Reserved block group size: 7
+Created filesystem with 11/4224 inodes and 1302/16896 blocks
+emulator: nand_add_dev: cache,size=0x4200000,file=/media/samstechinfra/AOSP/nougat/out_samsdroid_cruise/target/product/seuic_cruise/cache.img,pagesize=512,extrasize=0
+emulator: registered 'boot-properties' qemud service
+emulator: Adding boot property: 'dalvik.vm.heapsize' = '48m'
+emulator: Adding boot property: 'qemu.sf.lcd_density' = '160'
+emulator: Adding boot property: 'qemu.hw.mainkeys' = '1'
+emulator: Adding boot property: 'qemu.sf.fake_camera' = 'back'
+emulator: Kernel parameters: qemu.gles=0 qemu=1 console=ttyGF0 android.qemud=ttyGF1 androidboot.hardware=goldfish clocksource=pit android.checkjni=1 ndns=1
+emulator:     trying to find: /media/samstechinfra/AOSP/nougat/prebuilts/android-emulator/linux-x86_64/bios.bin
+
+emulator:     trying to find: /media/samstechinfra/AOSP/nougat/prebuilts/android-emulator/linux-x86_64/lib/pc-bios/bios.bin
+
+emulator:     trying to find: /media/samstechinfra/AOSP/nougat/prebuilts/android-emulator/linux-x86_64/vgabios-cirrus.bin
+
+emulator:     trying to find: /media/samstechinfra/AOSP/nougat/prebuilts/android-emulator/linux-x86_64/lib/pc-bios/vgabios-cirrus.bin
+
+emulator: autoconfig: -scale 1
+emulator: Forcing ro.adb.qemud to "0".
+emulator: control console listening on port 5554, ADB on port 5555
+emulator: can't connect to ADB server: Transport endpoint is not connected (errno = 107)
+emulator: android_hw_fingerprint_init: fingerprint qemud listen service initialized
+
+emulator: Failed to parse .AndroidStudio preferences file usage.statistics.xml
+emulator: Defaulting user crash-report opt-in to false
+emulator: Skipping metrics reporting: No user opt-in.
+emulator: UpdateCheck: current version 'invalid', last version '24.4.1'
+goldfish_fb_get_pixel_format:170: display surface,pixel format:
+  bits/pixel:  16
+  bytes/pixel: 2
+  depth:       16
+  red:         bits=5 mask=0xf800 shift=11 max=0x1f
+  green:       bits=6 mask=0x7e0 shift=5 max=0x3f
+  blue:        bits=5 mask=0x1f shift=0 max=0x1f
+  alpha:       bits=0 mask=0x0 shift=0 max=0x0
+
