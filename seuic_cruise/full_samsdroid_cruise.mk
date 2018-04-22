@@ -36,13 +36,14 @@ PRODUCT_MODEL := Sams Club Device (Cruise)
 PRODUCT_LOCALES := en_US
 
 # default is nosdcard, S/W button enabled in resource
-DEVICE_PACKAGE_OVERLAYS := device/samsclub/seuic_cruise/goi_overlays
+DEVICE_PACKAGE_OVERLAYS := device/samsclub/seuic_cruise/sdc_overlays
 PRODUCT_CHARACTERISTICS := nosdcard
 
 # The product customizations go here
 PRODUCT_COPY_FILES += \
          device/samsclub/seuic_cruise/samstech320x480.rle:root/initlogo.rle \
-         device/samsclub/seuic_cruise/samstech320x480.rle:root/logo.rle
+         device/samsclub/seuic_cruise/samstech320x480.rle:root/logo.rle \
+         device/samsclub/seuic_cruise/bootanimation.zip:system/media/bootanimation.zip
 
 
 
