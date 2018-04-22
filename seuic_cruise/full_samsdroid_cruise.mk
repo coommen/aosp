@@ -13,12 +13,15 @@
 #     +--> base.mk
 #     +--> embedded.mk
 
-# Didn't load in Emulator
-#$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
+# Trying this again with changes in how the device makefile is loaded
+$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
+$(call inherit-product, device/generic/armv7-a-neon/mini_common.mk)
+$(call inherit-product, device/samsclub/seuic_cruise/seuic_cruise.mk)
+
 
 #using this instead
-$(call inherit-product, device/generic/armv7-a-neon/mini_common.mk)
-
+# $(call inherit-product, device/generic/armv7-a-neon/mini_common.mk)
+# $(call inherit-product, device/samsclub/seuic_cruise/seuic_cruise.mk)
 
 # REQUIRED - creates the emulator tools for the build
 # must be included in the product make file in order to get it created for this product
@@ -50,6 +53,6 @@ PRODUCT_COPY_FILES += \
 
 # when the devicename and product names don't match you need to 
 # explicitly inlcude the device make file
-include device/samsclub/seuic_cruise/seuic_cruise.mk 
+# include device/samsclub/seuic_cruise/seuic_cruise.mk 
 OUT_DIR := out_samsdroid_cruise
 
