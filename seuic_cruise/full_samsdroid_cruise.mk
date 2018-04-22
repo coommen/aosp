@@ -40,8 +40,9 @@ DEVICE_PACKAGE_OVERLAYS := device/samsclub/seuic_cruise/goi_overlays
 PRODUCT_CHARACTERISTICS := nosdcard
 
 # The product customizations go here
-PRODYCT_COPY_FILES += \
-         device/samsclub/seuic_cruise/samstech320x480.rle:root/initlogo.rle
+PRODUCT_COPY_FILES += \
+         device/samsclub/seuic_cruise/samstech320x480.rle:root/initlogo.rle \
+         device/samsclub/seuic_cruise/samstech320x480.rle:root/logo.rle
 
 
 
