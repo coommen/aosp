@@ -39,6 +39,13 @@ PRODUCT_LOCALES := en_US
 DEVICE_PACKAGE_OVERLAYS := device/samsclub/seuic_cruise/goi_overlays
 PRODUCT_CHARACTERISTICS := nosdcard
 
+# The product customizations go here
+PRODYCT_COPY_FILES += \
+         device/samsclub/seuic_cruise/samstech320x480.rle:root/initlogo.rle
+
+
+
+
 # when the devicename and product names don't match you need to 
 # explicitly inlcude the device make file
 include device/samsclub/seuic_cruise/seuic_cruise.mk 
