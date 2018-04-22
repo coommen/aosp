@@ -1,0 +1,3 @@
+add_lunch_combo samsdroid_cruise-userdebug
+add_lunch_combo samsdroid_cruise-user
+add_lunch_combo samsdroid_cruise-eng
